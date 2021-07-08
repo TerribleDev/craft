@@ -1,0 +1,18 @@
+dateModified: 1625782418
+email:
+  fromEmail: tparnell8@gmail.com
+  fromName: Quala
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: pro
+  live: true
+  name: Quala
+  retryDuration: null
+  schemaVersion: 3.6.8
+  timeZone: America/New_York
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

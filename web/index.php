@@ -18,6 +18,7 @@ if (class_exists('Dotenv\Dotenv') && file_exists(CRAFT_BASE_PATH . '/.env')) {
 // Define additional PHP constants
 // (see https://craftcms.com/docs/3.x/config/#php-constants)
 define('CRAFT_ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
+define('CRAFT_LICENSE_KEY', getenv('CRAFT_LICENSE_KEY'));
 // ...
 
 // Load and run Craft
