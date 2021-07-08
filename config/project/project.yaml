@@ -1,6 +1,6 @@
 dateModified: 1625782418
 email:
-  fromEmail: tparnell8@gmail.com
+  fromEmail: $MAILER_FROM_ADDRESS
   fromName: Heroku
   transportType: craft\mail\transportadapters\Sendmail
 system:
