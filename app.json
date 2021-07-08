@@ -35,7 +35,7 @@
             "required": true
         },
         "PRIMARY_SITE_URL": {
-            "description": "The URL of your primary Craft CMS site. This is used to generate URLs for email verification, password reset, etc.",
+            "description": "The contents of your Craft license key file. Preserve newlines!"
         }
     },
     "formation": {
