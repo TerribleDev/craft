@@ -25,6 +25,9 @@ return [
         'collation' => 'utf8_unicode_ci',
     ],
     'production' => [
-        'url' => getenv('DATABASE_URL')
+        'url' => getenv('DATABASE_URL'),
+        'driver' => 'pgsql',
+        'charset' => 'utf8',
+        'collation' => 'utf8_unicode_ci'
     ]
 ];
