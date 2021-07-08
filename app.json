@@ -35,7 +35,8 @@
             "required": true
         },
         "PRIMARY_SITE_URL": {
-            "description": "The contents of your Craft license key file. Preserve newlines!"
+            "description": "The contents of your Craft license key file. Preserve newlines!",
+            "required": false
         }
     },
     "formation": {
