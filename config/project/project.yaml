@@ -1,12 +1,12 @@
 dateModified: 1625782418
 email:
   fromEmail: tparnell8@gmail.com
-  fromName: Quala
+  fromName: Heroku
   transportType: craft\mail\transportadapters\Sendmail
 system:
   edition: pro
   live: true
-  name: Quala
+  name: Heroku
   retryDuration: null
   schemaVersion: 3.6.8
   timeZone: America/New_York
