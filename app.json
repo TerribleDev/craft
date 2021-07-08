@@ -6,8 +6,8 @@
         "craft",
         "php"
     ],
-    "website": "https://oof.studio/",
-    "repository": "https://github.com/oof-bar/craft-heroku",
+    "website": "https://terrible.dev",
+    "repository": "https://github.com/terribledev/craft",
     "success_url": "/admin/install",
     "scripts": {},
     "env": {
