@@ -26,6 +26,7 @@ return [
     ],
     'production' => [
         'url' => getenv('DATABASE_URL'),
+        'schema' => App::env('DB_SCHEMA'),
         'driver' => 'pgsql',
         'charset' => 'utf8',
         'collation' => 'utf8_unicode_ci'
