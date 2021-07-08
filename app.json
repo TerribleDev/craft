@@ -15,6 +15,10 @@
             "description": "The Craft environment for this app.",
             "value": "production"
         },
+        "DB_SCHEMA": {
+            "description": "The database schema for this app.",
+            "value": "public"
+        },
         "CRAFT_LICENSE_KEY": {
             "description": "The contents of your Craft license key file. Preserve newlines!"
         },
