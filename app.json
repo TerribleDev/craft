@@ -1,0 +1,60 @@
+{
+    "name": "Craft 3",
+    "description": "A sample app + starterkit for deploying Craft 3 to Heroku.",
+    "keywords": [
+        "craftcms",
+        "craft",
+        "php"
+    ],
+    "website": "https://oof.studio/",
+    "repository": "https://github.com/oof-bar/craft-heroku",
+    "success_url": "/admin/install",
+    "scripts": {},
+    "env": {
+        "ENVIRONMENT": {
+            "description": "The Craft environment for this app.",
+            "value": "production"
+        },
+        "CRAFT_LICENSE_KEY": {
+            "description": "The contents of your Craft license key file. Preserve newlines!"
+        },
+        "SECURITY_KEY": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "generator": "secret"
+        },
+        "CRAFT_STORAGE_PATH": {
+            "description": "Where we should store Craft runtime artifacts. Must be writable by the Heroku web process, and assumed ephemeral. This is not a place to permanently store uploaded files.",
+            "value": "/tmp"
+        },
+        "MAILER_FROM_ADDRESS": {
+            "description": "The email address your application will use as the default sender.",
+            "required": true
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "standard-1x"
+        },
+        "worker": {
+            "quantity": 1,
+            "size": "standard-1x"
+        }
+    },
+    "addons": [
+        "heroku-postgresql",
+        "heroku-redis"
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ],
+    "environments": {
+        "staging": {
+            "env": {
+                "ENVIRONMENT": "production"
+            }
+        }
+    }
+}
